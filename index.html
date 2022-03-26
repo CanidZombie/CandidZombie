@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>A <b>responsive</b> website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Admin</a>
+  <a href="#">Students Login</a>
+  <a href="#">Contact Us</a>
+  <a href="#" class="right">About Us</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>My name is Avijit Roy. My UID is 21MCC2158. I am pursuing Masters in Cloud Computing</p>
+    <h3>More Details about Myself</h3>
+    <p>Contact Details.</p>
+    <div class="fakeimg" style="height:60px;">Phone Number: 8617071239</div><br>
+    <div class="fakeimg" style="height:60px;">Email : avjtroy905@gmail.com</div><br>
+    <div class="fakeimg" style="height:60px;">Website:"               "</div>
+  </div>
+  <div class="main">
+    <h2>SIKKIM</h2>
+    <h5>Which is my favourite State....., MARCH 4, 2022</h5>
+    <div class="fakeimg" style="height:200px;">Sikkim, state in India,is located in the northeastern part of the country, in the eastern Himalayas. It is one of the smallest states in India. Sikkim is bordered by the Tibet Autonomous Region of China to the north and northeast, by Bhutan to the southeast, by the Indian state of West Bengal to the south, and by Nepal to the west. The capital is Gangtok, in the southeastern part of the state</div>
+    <p>Thank You..</p>
+    <p>The People of Sikkim consist of three ethnic groups, that is, Lepcha, Bhutia and Nepali. Communities of different hues intermingle freely in Sikkim to constitute a homogenous blend. Hindu Temples coexist with Buddhist Monasteries, Churches, Mosque and Gurudwara.</p>
+    <br>
+    <h2>CHANDIGARH</h2>
+    <h5>The Place where i am Studying now...., MARCH 4, 2022</h5>
+    <div class="fakeimg" style="height:200px;">Chandigarh, the capital of the northern Indian states of Punjab and Haryana, was designed by the Swiss-French modernist architect, Le Corbusier. His buildings include the Capitol Complex with its High Court, Secretariat and Legislative Assembly, as well as the giant Open Hand Monument. </div>
+    <p>Thank You..</p>
+    <p>Area: 114 km²
+Elevation: 321m
+Founded: 1953
+Official tree: Mangifera indica</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>THANK YOU ALL FOR BEING HERE--AVIJIT ROY--</h2>
+</div>
+
+</body>
+</html>
